@@ -1,6 +1,6 @@
 def lesson_1():
     """Today we will cover multiple things from the most basic of a comment
-    to the advancement od a while loop. We will go over these clearly in
+    to the advancement of enumeration. We will go over these clearly in
     detail so you can grasp the concepts cleary and precisely."""
 
     #What is a comment?

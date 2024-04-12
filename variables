@@ -1,0 +1,400 @@
+def lesson_1():
+    """Today we will cover multiple things from the most basic of a comment
+    to the advancement od a while loop. We will go over these clearly in
+    detail so you can grasp the concepts cleary and precisely."""
+
+    #What is a comment?
+    #A comment is a way to let other programmers or yourself know
+    #what something does, why it's there, etc.
+    #We have 2 different types of comments
+    #Inline using the hash symbol '#'
+    #Lastly using triple quotes to add multiple lines of code. Usually used
+    #as a docstring to name the code and tell everyone it's features
+    #DocString, Methods, Classes, etc.
+
+    #*******************************************************Primitive Data
+
+    #Integers: These are whole numbers, such as 1, 2, 3, etc.
+    #They can be positive or negative.
+
+
+
+    this_is_an_int = 10
+    print('\nInteger:', this_is_an_int)
+    print(type(this_is_an_int))  # <class 'int'>
+
+    #floats: These are decimal numbers, such as 1.0, 2.5, 3.14, etc.
+    this_is_a_float = 10.5
+    print('\nFloat:', this_is_a_float)
+    print(type(this_is_a_float))  # <class 'float'>
+
+    #Strings: These are sequences of characters in quotation marks,
+    #such as "Hello, Student!".
+    this_is_a_string = 'that\'s'
+    print('\nString:', this_is_a_string)
+    print(type(this_is_a_string))  # <class 'str'>
+
+    #Booleans: These are values that can be either True or False.
+    #These are often used for conditional statements like if/elif/else.
+    this_is_a_boolean = True
+    print('\nBoolean:', this_is_a_boolean)
+    print(type(this_is_a_boolean)) # <class 'boolean'>
+
+    #Lists : These are ordered collections of items. They can hold any type
+    #of data, including strings, integers, floats, even other lists.
+    this_is_a_list = [this_is_a_string, 1, 10.4, 'string', True]
+    print('\nList:', this_is_a_list)
+    print(type(this_is_a_list))   # <class 'list'>
+
+    #Tuples: These are ordered collections of values that cannot be changed,
+    #such as (1, 2, 3).
+    this_is_a_tuple = (1, .5, 'string', this_is_a_float)
+    print('\nTuple:', this_is_a_tuple)
+    print(type(this_is_a_tuple)) # <class 'tuple'>
+
+    #Dictionaries: These are collections of key-value pairs,
+    #such as {"name": "John", "age": 30}.
+    this_is_a_dictionary = {'name': 'John', 'age': 30}
+    print('\nDictionary:', this_is_a_dictionary)
+    print(type(this_is_a_dictionary))  # <class 'dict'>
+
+    #Sets: These are unordered collections of unique values,
+    #such as {1, 2, 3}. CANNOT HAVE DUPLICATES
+    this_is_a_set = {1, 2, 3, 1, 2, 3}
+    print('\nSet:', this_is_a_set)
+    print(type(this_is_a_set)) # <class 'set'>
+
+    #*************************************************************Operations
+
+    # Addition (+): Adds two values together.
+    this_is_addition = 5 + 3
+    print('\nAddition:', this_is_addition)  # Output: 8
+    print(type(this_is_addition))  # <class 'int'>
+
+    # Subtraction (-): Subtracts one value from another.
+    this_is_subtraction = 10 - 4
+    print('\nSubtraction:', this_is_subtraction)  # Output: 6
+    print(type(this_is_subtraction))  # <class 'int'>
+
+    # Multiplication (*): Multiplies two values together.
+    this_is_multiplication = 2 * 7
+    print('\nMultiplication:', this_is_multiplication)  # Output: 14
+    print(type(this_is_multiplication))  # <class 'int'>
+    
+    # Multiplication (*): Multiplies two values together.
+    this_is_raising_to_power = 2 ** 7
+    print('\nRaising to Power', this_is_raising_to_power)  # Output: 14
+    print(type(this_is_raising_to_power))  # <class 'int'>
+
+    # Division (/): Divides one value by another.
+    this_is_division = 12 / 4
+    print('\nDivision:', this_is_division)  # Output: 3.0
+    print(type(this_is_division))  # <class 'float'>
+
+    # Floor Division (//): Divides two values and returns the largest whole
+    # number less than or equal to the result.
+    this_is_floor_division = 1 // 4
+    print('\nFloor Division:', this_is_floor_division)   # Output: 3
+    print(type(this_is_floor_division)) # <class 'int'>
+
+    # Modulus (%): Returns the remainder of a division operation.
+    this_is_modulus = 1 % 4
+    print('\nModulus Division', this_is_modulus)
+    print(type(this_is_modulus)) # <class 'int'>
+
+    # Equal to (==): Tests if two values are equal.
+    this_is_equal_to = 5 == 3
+    print('\nEqual To:', this_is_equal_to)  # Output: False
+    print(type(this_is_equal_to))  # <class 'boolean'>
+
+    # Not equal to (!=): Tests if two values are not equal.
+    this_is_not_equal_to = 5 != 5
+    print('\nNot Equal:', this_is_not_equal_to)  # Output: False
+    print(type(this_is_not_equal_to))  # <class 'boolean'>
+
+    # Greater than
+    this_is_greater_than = 7 > 2
+    print('\nGreater Than:', this_is_greater_than)  # Output: True
+    print(type(this_is_greater_than)) # <class 'boolean'>
+
+    # Less than
+    this_is_less_than = 3 < 9
+    print('\nLess than:', this_is_less_than)  # Output: True
+    print(type(this_is_less_than))  # <class 'boolean'>
+
+    # Greater than or equal to
+    this_is_greater_than_or_equal_to = 5 >= 5
+    print('\nGreater or equal to:', this_is_greater_than_or_equal_to)  # Output: True
+    print(type(this_is_greater_than_or_equal_to))  # <class 'boolean'>
+
+    # Less than or equal to
+    this_is_less_than_or_equal_to = 4 <= 4
+    print('\nLess than or equal to', this_is_less_than_or_equal_to)  # Output: True
+    print(type(this_is_less_than_or_equal_to))  # <class 'boolean'>
+
+
+
+
+
+    #Using Lists
+
+    this_is_a_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+    # Accessing elements in a list
+    first_element = this_is_a_list[0]
+    last_element = this_is_a_list[-5::]
+    print(f'\n\n\nFirst element: {first_element}, Last element: {last_element}')
+
+    # Modifying elements in a list
+    this_is_a_list[0] = 100
+    print('Modified first element:', this_is_a_list[0])
+
+    # Adding elements to a list
+    this_is_a_list.append(11)
+    print('Added element:', this_is_a_list[-1])
+
+    # Removing elements from a list
+    this_is_a_list.remove(3)
+    print('Removed element:', 3)
+
+    # Sorting a list
+    this_is_a_list.sort()
+    print('Sorted list:', this_is_a_list)
+
+    # Reversing a list
+    this_is_a_list.reverse()
+    print('Reversed list:', this_is_a_list)
+
+    # Finding the length of a list
+    list_length = len(this_is_a_list)
+    print('Length of list:', list_length)
+
+    # Checking if an element is in a list
+    if 5 in this_is_a_list:
+        print('5 is in the list')
+
+    # Concatenating lists
+    this_is_a_list_2 = [11, 12, 13]
+    combined_list = this_is_a_list + this_is_a_list_2
+    print('Combined list:', combined_list)
+
+    # Using list comprehensions
+    squared_list = [x**3 for x in this_is_a_list]
+    print('Squared list:', squared_list)
+
+    # Using the enumerate() function
+    for i, value in enumerate(this_is_a_list):
+        print(f'Index: {i}, Value: {value}')
+
+    # Using the zip() function
+    list_2 = [11, 12, 13]
+    zipped_list = zip(this_is_a_list, list_2)
+    print('Zipped list:', list(zipped_list))
+
+    # Using the sum() function
+    list_sum = sum(this_is_a_list)
+    print('Sum of list:', list_sum)
+
+    # Using the min() and max() functions
+    list_min = min(this_is_a_list)
+    list_max = max(this_is_a_list)
+    print('Min of list:', list_min, 'Max of list:', list_max)
+
+    # Using the any() and all() functions
+    any_even = any(x % 2 == 0 for x in this_is_a_list)
+    all_even = all(x % 2 == 0 for x in this_is_a_list)
+    print('Any even:', any_even, 'All even:', all_even)
+
+    # Using the filter() function
+    filtered_list = list(filter(lambda x: x % 2 == 0, this_is_a_list))
+    print('Filtered list:', filtered_list)
+
+    # Using the map() function
+    mapped_list = list(map(lambda x: x**2, this_is_a_list))
+    print('Mapped list:', mapped_list)
+
+
+
+
+
+
+    #Using Dictionaries
+
+        # Creating a dictionary
+    my_dict = {'Book': 'To Have and Have Not', 'Published': 2024}
+    print('\nDictionary:', my_dict)
+    print(type(my_dict))  # <class 'dict'>
+
+    # Accessing values in a dictionary
+    Book = my_dict['Book']
+    Published = my_dict['Published']
+    print(f'Title: {Book}, Published: {Published}')
+
+    # Modifying values in a dictionary
+    my_dict['Published'] = 1937
+    print('Modified Published Year:', my_dict['Published'])
+
+    # Adding key-value pairs to a dictionary
+    my_dict['Author'] = 'Ernest Hemingway'
+    print('Added key-value pair:', my_dict['Author'])
+
+    # Removing key-value pairs from a dictionary
+    del my_dict['Published']
+    print('Removed key-value pair:', 'Published' not in my_dict)
+
+    # Iterating over a dictionary
+    for key, value in my_dict.items():
+        print(f'Key: {key}, Value: {value}')
+
+    # Checking if a key is in a dictionary
+    if 'Author' in my_dict:
+        print('Author is in the dictionary')
+
+    # Getting the length of a dictionary
+    dict_length = len(my_dict)
+    print('Length of dictionary:', dict_length)
+
+
+
+
+#Using Tuples
+    # Creating a tuple
+    my_tuple = (21, 9,3)
+    print('\nTuple:', my_tuple)
+    print(type(my_tuple))  # <class 'tuple'>
+
+    # Accessing elements in a tuple
+    first_element = my_tuple[0]
+    last_element = my_tuple[-1]
+    print(f'First element: {first_element}, Last element: {last_element}')
+
+    # Modifying elements in a tuple (Note: Tuples are immutable, so you cannot modify their elements)
+    # my_tuple[0] = 100 # This will raise a TypeError
+
+    # Adding elements to a tuple
+    # my_tuple.append(4) # Tuples do not have an append method
+    new_tuple = my_tuple + (11,)
+    print('Added element:', new_tuple[-1])
+
+    # Removing elements from a tuple
+    # my_tuple.remove(2) # Tuples do not have a remove method
+
+    # Sorting a tuple
+    # my_tuple.sort() # Tuples are immutable, so you cannot sort them
+
+    # Reversing a tuple
+    # my_tuple.reverse() # Tuples are immutable, so you cannot reverse them
+
+    # Finding the length of a tuple
+    tuple_length = len(my_tuple)
+    print('Length of tuple:', tuple_length)
+
+    # Checking if an element is in a tuple
+    if 2 in my_tuple:
+        print('2 is in the tuple')
+
+    # Concatenating tuples
+    tuple_2 = (19, 5, 13)
+    combined_tuple = my_tuple + tuple_2
+    print('Combined tuple:', combined_tuple)
+
+    # Using tuple comprehensions
+    # Tuples do not support comprehensions
+
+    # Using the enumerate() function
+    # Tuples do not support the enumerate() function
+
+    # Using the zip() function
+    list_1 = [3, 5, 7]
+    zipped_tuple = tuple(zip(my_tuple, list_1))
+    print('Zipped tuple:', zipped_tuple)
+
+    # Using the sum() function
+    # Tuples do not support the sum() function
+
+    # Using the min() and max() functions
+    tuple_min = min(my_tuple)
+    tuple_max = max(my_tuple)
+    print('Min of tuple:', tuple_min, 'Max of tuple:', tuple_max)
+
+    # Using the any() and all() functions
+    any_even = any(x % 2 == 0 for x in my_tuple)
+    all_even = all(x % 2 == 0 for x in my_tuple)
+    print('Any even:', any_even, 'All even:', all_even)
+
+    # Using the filter() function
+    # Tuples do not support the filter() function
+
+    # Using the map() function
+    mapped_tuple = tuple(map(lambda x: x**2, my_tuple))
+    print('Mapped tuple:', mapped_tuple)
+
+
+#Using Sets
+    #Creating a set
+    my_set = {1, 2, 3, 4, 5, 1, 2}
+    print('\nSet:', my_set)
+    print(type(my_set))  # <class 'set'>
+
+    # Accessing elements in a set (Note: Sets are unordered, so you cannot access elements by index)
+    # first_element = my_set[0] # This will raise a TypeError
+
+    # Modifying elements in a set
+    my_set.add(6)
+    print('Added element:', 6)
+
+    # Removing elements from a set
+    my_set.remove(3)
+    print('Removed element:', 3)
+
+    # Sorting a set (Note: Sets are unordered, so sorting does not make sense)
+    # my_set.sort() # This will raise a TypeError
+
+    # Reversing a set (Note: Sets are unordered, so reversing does not make sense)
+    # my_set.reverse() # This will raise a TypeError
+
+    # Finding the length of a set
+    set_length = len(my_set)
+    print('Length of set:', set_length)
+
+    # Checking if an element is in a set
+    if 5 in my_set:
+        print('5 is in the set')
+
+    # Concatenating sets
+    set_2 = {6, 7, 8}
+    combined_set = my_set | set_2 # Union
+    print('Combined set:', combined_set)
+
+    # Using set comprehensions
+    squared_set = {x**2 for x in my_set}
+    print('Squared set:', squared_set)
+
+    # Using the enumerate() function
+    # Sets do not support the enumerate() function
+
+    # Using the zip() function
+    list_1 = [1, 2, 3]
+    zipped_set = set(zip(my_set, list_1))
+    print('Zipped set:', zipped_set)
+
+    # Using the sum() function
+    # Sets do not support the sum() function
+
+    # Using the min() and max() functions
+    set_min = min(my_set)
+    set_max = max(my_set)
+    print('Min of set:', set_min, 'Max of set:', set_max)
+
+    # Using the any() and all() functions
+    any_even = any(x % 2 == 0 for x in my_set)
+    all_even = all(x % 2 == 0 for x in my_set)
+    print('Any even:', any_even, 'All even:', all_even)
+
+    # Using the filter() function
+    # Sets do not support the filter() function
+
+    # Using the map() function
+    # Sets do not support the map() function
+
+lesson_1()
